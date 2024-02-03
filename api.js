@@ -1,8 +1,9 @@
+import('dotenv/config')
 import OpenAI from 'openai';
 // const OpenAI = require('openai');
 
 const openai = new OpenAI({
-  apiKey: process.env['OPENAI_API_KEY']
+  apiKey: process.env.OPENAI_API_KEY
 });
 
   async function main() {
@@ -12,7 +13,7 @@ const openai = new OpenAI({
       model: "gpt-3.5-turbo",
     });
     
-  console.log(completion.choices[0]);
+  console.log(completion.choices[0].message.content);
 }
 main();
 // module.exports.default = main()
