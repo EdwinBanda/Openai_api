@@ -11,13 +11,14 @@
   "type": "module",
   "dependencies": {
     "dotenv": "^16.4.1",
-    "openai": "^4.26.0"
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1"
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^3.0.0"
   }
 }
