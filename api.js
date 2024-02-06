@@ -33,7 +33,7 @@ async function request(){
   headers:{
    accept: "application/json",
    "content-Type": "application/json",
-   Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+   Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, //To run this api key you should add it to the .env file
    organization: process.env.OPENAI_ORG_ID
   },
   body: JSON.stringify({
